@@ -79,26 +79,31 @@ PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
 
+####### WORK
 alias na='cd /Users/juliechien/Documents/InteractAble/Code/InteractAble'
-
 alias db='cd /Users/juliechien/Documents/InteractAble/Code/DevelopBranch'
-
 alias precompile='cd /Users/juliechien/Documents/InteractAble/Code/DevelopBranch/;rake assets:precompile'
-
-alias os-'ssh -p 3022 archie@127.0.0.1'
-alias clic='ssh yc2937@clic.cs.columbia.edu'
-
-alias ls='ls -G'
-alias c='clear'
-alias cdu='cd ..;ls'
+alias nsqb='open -n /Applications/sqlitebrowser.app'
 alias ia='ssh interactable@dev-game.interactable.org'
-alias ll='ls -GalF'
 
+####### SCHOOL
+alias os='ssh -p 3022 archie@127.0.0.1'
+alias clic='ssh yc2937@clic.cs.columbia.edu'
 alias algo='cd /Users/juliechien/Dropbox/Julie/Columbia/CSOR4231\ \(Analysis\ of\ Algorithms\ I\)/Yannakakis\ HW/'
 alias ocaml='rlwrap ocaml'
 alias plt='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/HW'
 alias tbag='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/tbag'
 alias seas='cd Dropbox/Julie/Columbia/'
+
+####### GENERAL
+alias ls='ls -G'
+alias c='clear'
+alias cdu='cd ..;ls'
+alias ll='ls -GalF'
+alias settings='/Users/juliechien/Dropbox/Julie/Developer/MySettings'
+alias tarup='tar -cvzf'
+alias untar='tar -xzvf'
+
 # cd into a directory and then ls it
 cs() {
     dir=$1
@@ -120,6 +125,5 @@ cd /Users/juliechien/Documents/Columbia/COMS3157/Labs/lab$1/part$2
 #  cd ~/cs3157/lab$1/part$2
  }
 
-alias nsqb='open -n /Applications/sqlitebrowser.app'
 
 ulimit -u 256

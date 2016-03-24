@@ -93,7 +93,7 @@ alias algo='cd /Users/juliechien/Dropbox/Julie/Columbia/CSOR4231\ \(Analysis\ of
 alias ocaml='rlwrap ocaml'
 alias plt='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/HW'
 alias tbag='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/tbag'
-alias seas='cd Dropbox/Julie/Columbia/'
+alias seas='cd /Users/juliechien/Dropbox/Julie/Columbia/'
 
 ####### GENERAL
 alias ls='ls -G'
@@ -103,7 +103,9 @@ alias ll='ls -GalF'
 alias settings='/Users/juliechien/Dropbox/Julie/Developer/MySettings'
 alias tarup='tar -cvzf'
 alias untar='tar -xzvf'
-
+killscreens () {
+    screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+}
 # cd into a directory and then ls it
 cs() {
     dir=$1

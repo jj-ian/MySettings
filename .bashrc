@@ -88,10 +88,10 @@ alias ia='ssh interactable@dev-game.interactable.org'
 
 ####### SCHOOL
 alias os='ssh -p 3022 archie@127.0.0.1'
+alias plt='ssh -p 3023 julie@127.0.0.1'
 alias clic='ssh yc2937@clic.cs.columbia.edu'
 alias algo='cd /Users/juliechien/Dropbox/Julie/Columbia/CSOR4231\ \(Analysis\ of\ Algorithms\ I\)/Yannakakis\ HW/'
 alias ocaml='rlwrap ocaml'
-alias plt='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/HW'
 alias tbag='cd /Users/juliechien/Dropbox/Julie/Columbia/COMS4115\ \(Programming\ Languages\ and\ Translators\)/tbag'
 alias seas='cd /Users/juliechien/Dropbox/Julie/Columbia/'
 
@@ -120,6 +120,7 @@ fi
 killscreens () {
     screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
 }
+
 # cd into a directory and then ls it
 cs() {
     dir=$1

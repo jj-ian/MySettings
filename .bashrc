@@ -143,4 +143,4 @@ cd /Users/juliechien/Documents/Columbia/COMS3157/Labs/lab$1/part$2
  }
 
 
-ulimit -u 1024
+#ulimit -u 1024

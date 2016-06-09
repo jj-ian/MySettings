@@ -79,13 +79,16 @@ PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
 
-####### WORK
+####### INTERACTABLE
 alias na='cd /Users/juliechien/Documents/InteractAble/Code/InteractAble'
 alias db='cd /Users/juliechien/Documents/InteractAble/Code/DevelopBranch'
 alias precompile='cd /Users/juliechien/Documents/InteractAble/Code/DevelopBranch/;rake assets:precompile'
 alias nsqb='open -n /Applications/sqlitebrowser.app'
 alias ia='ssh interactable@dev-game.interactable.org'
 
+####### ETSY
+alias sync='fswatch -e target . | xargs -n1 ~/etsync.sh'
+alias evm='moch ychien@ychien.vms.etsy.com'
 ####### SCHOOL
 alias os='ssh -p 3022 archie@127.0.0.1'
 alias plt='ssh -p 3023 julie@127.0.0.1'
